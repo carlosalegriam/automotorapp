@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Bienvenido a Automotorapp</h1>
+    <br>
+    <br>
+    <div class="container">
+        <h1>Catálogo de Vehículos</h1>
+        <h2 class="text-primary">Lista de vehículos registrados:</h2>
+        <ul>
+            {% for vehiculo in vehiculos %}
+            <li>{{ vehiculo.marca }} - {{ vehiculo.modelo }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    
+{% endblock %}

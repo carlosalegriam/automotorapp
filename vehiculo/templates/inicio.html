@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>Bienvenido a la página de Automotorapp</h1>
+        <h2> Haz iniciado sesión con exito!</h2>
+        <br>
+        <h4 class="text-primary">Panel de control: {{ user.username }}</h4>
+        <nav>
+            <ul>
+                <li><a href="{% url 'inicio' %}">Inicio</a></li>
+                {% if tiene_permiso_agregar %}
+                    <li><a href="{% url 'add' %}">Agregar</a></li>
+                {% endif %}
+                <li><a href="{% url 'listar' %}">Listar</a></li>
+            </ul>
+        </nav>
+    </div>
+{% endblock %}
