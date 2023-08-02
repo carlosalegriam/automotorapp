@@ -14,8 +14,8 @@
   ], 
   "routes": [
     {
-      "src": "/static/(.*)",
-      "dest": "/static/$1"
+      "src": "/automotorapp/static/(.*)",
+      "dest": "/automotorapp/static/$1"
     },
     {
       "src": "/(.*)",
