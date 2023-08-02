@@ -19,7 +19,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "automotorapp/wsgi.py"
+      "dest": "/automotorapp/wsgi.py"
     }
   ],
   "outputDirectory": "staticfiles"
